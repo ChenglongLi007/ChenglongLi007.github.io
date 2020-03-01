@@ -13,11 +13,33 @@
         <!-- Custom fonts for this template -->
         <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
         <link href="/css/fontawesome/all.min.css" rel="stylesheet">
-        
+
         <link rel="stylesheet" href="/assets/css/resume.css">
     </head>
-    <body>
+    
+    <body id="page-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/">
+              <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/profile.jpg" alt=""><!--你的照片-->
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"><!--左侧的列表 只改标题文字 不要改id 不需要的部分就删掉，把id对应的区块也删掉就好-->
+              <ul class="navbar-nav">
+                {% for item in site.data.navigation %}  
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="{{ item.link }}">{{item.name}}</a>
+                    </li>
+                {% endfor %}
+              </ul>
+            </div>
+        <!--
         {% include navigation.html %}
+        -->
         {{ content }}
     </body>
 </html>
