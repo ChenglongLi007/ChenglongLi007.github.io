@@ -1,68 +1,40 @@
 ---
+layout: compress
 ---
+
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% include head.html %}
 
-        <title>{{ page.title }}</title>
+<body>
+  {% include navbar.html %}
+  {% include showcase.html %}
+  {% include about.html %}
+  {% include contact.html %}
+  <!--Footer begins here-->
+  {% include footer.html %}
+</body>
+<script>
+  window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    var item = document.getElementsByClassName('navbar-item');
+    /* console.log(scroll); */
+    if (scroll < 565) {
+      item[1].classList.add('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 565 && scroll < 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.add('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.add('is-active');
+    }
+  });
+</script>
 
-        <!-- Bootstrap core CSS -->
-        <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom fonts for this template -->
-        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-        <link href="/assets/css/fontawesome/all.min.css" rel="stylesheet">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" href="/assets/css/resume.css">
-    </head>
-
-    <body id="page-top">
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="/">
-              <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/images/profile.jpeg" alt=""><!--你的照片-->
-              </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"><!--左侧的列表 只改标题文字 不要改id 不需要的部分就删掉，把id对应的区块也删掉就好-->
-              <ul class="navbar-nav">
-                {% for item in site.data.navigation %}  
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ item.link }}">{{item.name}}</a>
-                    </li>
-                {% endfor %}
-              </ul>
-            </div>
-        </nav>
-        
-        {{ content }}
-
-        <!-- Bootstrap core JavaScript -->
-        <script src="/assets/js/jquery.min.js"></script>
-        <script src="/assets/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Plugin JavaScript -->
-        <script src="/assets/js/jquery.easing.min.js"></script>
-
-        <!-- Custom scripts for this template -->
-        <script src="/assets/js/resume.js"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143395289-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-143395289-1');
-        </script>
-    </body>
 </html>
