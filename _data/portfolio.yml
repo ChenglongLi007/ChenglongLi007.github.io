@@ -1,0 +1,9 @@
+- name: Exploring machine learning approaches to improve scheduler performance
+  image: /assets/images/ericsson.jpg
+  description: The thesis project consists of two parts. First part is an extensive literature study in the research area of machine learning in scheduling and writing the report that summarizes research in this area. Second part is to explore how machine learning can be used to predict waiting time and service time for jobs in internal scheduling system and writing the report. The second part comprises extracting data from database, cleaning data, analyzing correlations between features and waiting time, extracting useful features and creating new features, predicting waiting time using machine learning methods. 
+- name:
+  image: /assets/images/inspur.png
+  description: Worked as an intern engineer for product research & development team. Worked on summarizing the second version of ”AND Credit” and valuated the feasibility of encapsulation of its functions. Visualized the original credit score calculating process and demonstrated in a pipeline. Reconstructed and replaced some subroutines of the procedure of ”AND Credit” in order to make it a pipeline process on Data Science Platform of Inspur.
+- name: Data driven model for truck behavior
+  image: /assets/images/skogforsk.jpg
+  description: The project aims at predicting the behavior of the truck driver in order to becoming a sub-program to predict the fuel consumption for Skogforsk. I worked on analyzing the correlations of features and building recurrent neural network including parameters tuning to find out a better model.
