@@ -415,10 +415,12 @@ a.navbar-item.is-active {
     }
     .md-portfolio-image {
         height: 250px;
+        border: solid;
     }
     .md-portfolio-text {
         text-align: left;
         height: 250px;
+        border: solid;
     }
 }
 
@@ -431,9 +433,11 @@ a.navbar-item.is-active {
     }
     .sm-portfolio-image {
         height: 100%;
+        border: solid;
     }
     .sm-portfolio-text {
         text-align: left;
+        border: solid;
     }
 }
 
