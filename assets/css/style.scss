@@ -415,7 +415,7 @@ a.navbar-item.is-active {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .interest-ul {
         position: absolute;
         left: 50%;
