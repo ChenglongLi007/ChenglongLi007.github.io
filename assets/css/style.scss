@@ -420,6 +420,9 @@ a.navbar-item.is-active {
         text-align: left;
         height: 250px;
     }
+    .md-portfolio-row {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -437,8 +440,9 @@ a.navbar-item.is-active {
         text-align: left;
         border: solid;
     }
+    .sm-portfolio-row {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
 
-.portfolio-row {
-    width: 100%;
-}
