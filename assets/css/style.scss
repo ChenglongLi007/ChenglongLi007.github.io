@@ -355,7 +355,7 @@ a.navbar-item.is-active {
 }
 
 @media (min-width: 768px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-6-margin, .col-md-7,
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6-IE, .col-md-6-margin, .col-md-7,
     .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
         margin: 0px;
@@ -375,7 +375,7 @@ a.navbar-item.is-active {
     .col-md-5 {
         width: 41.66%;
     }
-    .col-md-6 {
+    .col-md-6-IE {
         width: 50%;
     }
     .col-md-6-margin {
