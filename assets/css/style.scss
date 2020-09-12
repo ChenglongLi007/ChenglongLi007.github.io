@@ -413,6 +413,13 @@ a.navbar-item.is-active {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .md-portfolio-image {
+        height: 250px;
+    }
+    .md-portfolio-text {
+        text-align: left;
+        height: 250px;
+    }
 }
 
 @media (max-width: 767px) {
