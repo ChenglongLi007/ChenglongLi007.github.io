@@ -359,8 +359,8 @@ a.navbar-item.is-active {
 }
 
 @media (min-width: 768px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6-IE, .col-md-6-margin, .col-md-7,
-    .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    .col-md-1, .col-md-2, .col-md-3-portfolio, .col-md-4, .col-md-5, .col-md-6-IE, .col-md-6-margin, .col-md-7-portfolio,
+    .col-md-8, .col-md-9-portfolio, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
         margin: 0px;
     }
@@ -370,7 +370,7 @@ a.navbar-item.is-active {
     .col-md-2 {
         width: 16.66%;
     }
-    .col-md-3 {
+    .col-md-3-portfolio {
         width: 25%;
     }
     .col-md-4 {
@@ -394,7 +394,7 @@ a.navbar-item.is-active {
     .col-md-8 {
         width: 66.66%;
     }
-    .col-md-9 {
+    .col-md-9-portfolio {
         width: 75%;
     }
     .col-md-10 {
@@ -419,4 +419,12 @@ a.navbar-item.is-active {
     .interest-ul {
         margin-left: 30%;
     }
+}
+
+.portfolio-row {
+    width: 100%;
+}
+
+.portfolio-image {
+    
 }
