@@ -10,7 +10,7 @@ layout: compress
   {% include navbar.html %}
   {% include showcase.html %}
   {% include about.html %}
-  {% include portfolio.html %}
+  <!-- {% include portfolio.html %} -->
   {% include contact.html %}
   <!--Footer begins here-->
   {% include footer.html %}
@@ -24,25 +24,16 @@ layout: compress
       item[1].classList.add('is-active');
       item[2].classList.remove('is-active');
       item[3].classList.remove('is-active');
-      item[4].classList.remove('is-active');
     }
     if (scroll > 565 && scroll < 1130) {
       item[1].classList.remove('is-active');
       item[2].classList.add('is-active');
       item[3].classList.remove('is-active');
-      item[4].classList.remove('is-active');
     }
-    if (scroll > 1130 && scroll < 1695) {
+    if (scroll > 1130) {
       item[1].classList.remove('is-active');
       item[2].classList.remove('is-active');
       item[3].classList.add('is-active');
-      item[4].classList.remove('is-active');
-    }
-    if (scroll > 1695) {
-      item[1].classList.remove('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.remove('is-active');
-      item[4].classList.add('is-active');
     }
   });
 </script>
